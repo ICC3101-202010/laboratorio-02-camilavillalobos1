@@ -1,12 +1,26 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace laboratorio_2_poo_cv
 {
-    class MainClass
+    class Program
+
     {
+        
+
+        //CONSOLA OFICIAL DE LA TERMINAL 
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Cancion cancion1 = new Cancion("nombre1", "album1", "artista1", "genero1");
+            Console.WriteLine(cancion1.Informacion());
+
+
+
         }
+
+
+        
     }
-}
+
+}   
+
