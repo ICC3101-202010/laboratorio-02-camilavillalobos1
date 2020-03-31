@@ -57,11 +57,12 @@ namespace laboratorio_2_poo_cv
         public Cancion[] CancionesPorCriterio(string criterio, string valor)
         {
 
-            string criteriopedido = criterio.Informacion();
+            string criteriopedido = criterio.Cancion();
 
-            if (criterio != criteriopedido)
+            if (criterio != "cancion" || criteriopedido != "album" || criteriopedido != "artista" || criteriopedido != "genero")
             {
                 Console.WriteLine("Criterio invalido");
+                
             }
         }
 
