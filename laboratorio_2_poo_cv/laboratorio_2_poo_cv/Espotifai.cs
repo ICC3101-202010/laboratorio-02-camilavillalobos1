@@ -17,54 +17,54 @@ namespace laboratorio_2_poo_cv
             songList = new List<Cancion>();
         }
 
-        public bool AgregarCancion(Cancion cancion)
+        //public bool AgregarCancion(Cancion cancion)
 
-        {
-            string infocancion = cancion.Informacion();
+        //{
+        //    string infocancion = cancion.Informacion();
 
-            foreach (Cancion cancionLista in songList)
-            {
-                if (cancionLista.Informacion() != infocancion)
-                {
-                    songList.Add(cancion);
-                    return true;
-                }
+        //    foreach (Cancion cancionLista in songList)
+        //    {
+        //        if (cancionLista.Informacion() != infocancion)
+        //        {
+        //            songList.Add(cancion);
+        //            return true;
+        //        }
 
-            }
+        //    }
 
-            foreach (Cancion cancionLista in songList)
-            {
-                if (cancionLista.Informacion() == infocancion)
-                {
-                    Console.WriteLine("No se puede agregar la cancion");
-                    return false;
-                }
+        //    foreach (Cancion cancionLista in songList)
+        //    {
+        //        if (cancionLista.Informacion() == infocancion)
+        //        {
+        //            Console.WriteLine("No se puede agregar la cancion");
+        //            return false;
+        //        }
 
-            }
-            return true;
-        }
+        //    }
+        //    return true;
+        //}
 
-        public void VerCanciones()
+        //public void VerCanciones()
 
-        {
-            for (int i = 0; i < songList.Count(); i++)
-            {
-                Console.WriteLine(songList[i]);
-            }
-        }
+        //{
+        //    for (int i = 0; i < songList.Count(); i++)
+        //    {
+        //        Console.WriteLine(songList[i]);
+        //    }
+        //}
 
 
-        public Cancion[] CancionesPorCriterio(string criterio, string valor)
-        {
+        //public Cancion[] CancionesPorCriterio(string criterio, string valor)
+        //{
 
-            string criteriopedido = criterio.Cancion();
+        //    string criteriopedido = criterio.Cancion();
 
-            if (criterio != "cancion" || criteriopedido != "album" || criteriopedido != "artista" || criteriopedido != "genero")
-            {
-                Console.WriteLine("Criterio invalido");
+        //    if (criterio != "cancion" || criteriopedido != "album" || criteriopedido != "artista" || criteriopedido != "genero")
+        //    {
+        //        Console.WriteLine("Criterio invalido");
                 
-            }
-        }
+        //    }
+        //}
 
         //public bool GenerarPlaylist(String criterio, String valorCriterio, String nombrePlaylist)
         //{

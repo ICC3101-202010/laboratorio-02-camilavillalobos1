@@ -17,15 +17,15 @@ namespace laboratorio_2_poo_cv
         {
 
             Console.WriteLine("Bienvenido a Espotifai \n ");
-            Console.WriteLine("[1] Ver todas las canciones \n [2] Agregar canciones \n [3] Salir del programa \n");
+            Console.WriteLine("[1] Ver todas las canciones \n [2] Agregar canciones \n [3] Ver canciones por criterio \n [4] Salir del programa \n");
             Console.Write("Que desea hacer: ");
             string usuario = Console.ReadLine();
             while(usuario == "1" )
             {
                 if (usuario == "1")
                 {
-                    Espotifai espotifai = new Espotifai();
-                    Console.WriteLine(espotifai.VerCanciones());
+                    //Espotifai espotifai = new Espotifai();
+                    //Console.WriteLine(espotifai.VerCanciones());
                 }
 
                 else if (usuario == "2")
@@ -42,6 +42,11 @@ namespace laboratorio_2_poo_cv
                     Console.WriteLine(song.Informacion());
                     Cancion cancion1 = new Cancion("nombre1", "album1", "artista1", "genero1");
                     Console.WriteLine(cancion1.Informacion());
+                }
+
+                else if (usuario == "4")
+                {
+                    break;
                 }
 
             }
